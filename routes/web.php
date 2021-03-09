@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'musicDisk' =>
+        'musicDisk' => [
             [
                 "poster" => "https://images-na.ssl-images-amazon.com/images/I/71QuCjJwVUL._AC_SL1176_.jpg",
                 "title" => "Elements of Life",
@@ -86,6 +86,7 @@ Route::get('/', function () {
                 "genre" => "Pop",
                 "year" => "2015"
             ]
+        ]
     ];
     return view('home', $data);
 });

@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>Prova dischi</h1>
-    @foreach ($musicDisk as $disk) 
-        <p> {{$disk["title"]}} </p>
+    @foreach($musicDisk as $disk)
+        <img src="{{$disk["poster"]}}" alt="{{ $disk["title"] }}">
+        <h2> {{ $disk["title"] }} </h2>
+        <h3> {{ $disk["author"] }} </h3>
+        <h4> {{ $disk["genre"] }} </h4>
+        <h5> {{ $disk["year"] }} </h5>
     @endforeach
 </body>
 </html>
